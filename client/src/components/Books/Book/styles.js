@@ -50,4 +50,9 @@ export default makeStyles({
     display: 'flex',
     justifyContent: 'space-between',
   },
+  buttons: {
+    padding: '0 16px 8px 16px',
+    display: 'flex',
+    justifyContent: 'left'
+  }
 });

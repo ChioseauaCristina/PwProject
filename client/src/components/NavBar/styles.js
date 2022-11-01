@@ -3,8 +3,6 @@ import { deepPurple } from '@material-ui/core/colors';
 
 export default makeStyles((theme) => ({
   appBar: {
-    backgroundColor: null,
-    background: 'hsla(336, 61%, 81%, 0.3)',
     borderRadius: 10,
     margin: '30px 0',
     padding: '10px 50px',
@@ -15,7 +13,7 @@ export default makeStyles((theme) => ({
     fontFamily: 'monospace',
     fontWeight: 700,
     letterSpacing: '.3rem',
-    color: 'inherit',
+    color: 'pink',
     marginTop: '3px'
   },
   image: {
@@ -25,15 +23,23 @@ export default makeStyles((theme) => ({
     display: 'flex',
     justifyContent: 'flex-end',
     width: '400px',
+    
   },
   profile: {
     display: 'flex',
+    justifyContent: 'right',
+    width: '500px',
+    gap: '30px'
+  },
+  signin: {
+    display: 'flex',
     justifyContent: 'space-between',
-    width: '400px',
+    width: '190px',
   },
   userName: {
     display: 'flex',
     alignItems: 'center',
+    color: '#707070'
   },
   brandContainer: {
     display: 'flex',
