@@ -4,3 +4,13 @@ export const actionTypesEnum = {
     update: 'UPDATE',
     delete: 'DELETE'
 }
+
+export const authActionTypesEnum = {
+    auth: 'AUTH',
+    logout: 'LOGOUT',
+}
+
+export const orderActionTypesEnum = {
+    create: "CREATE",
+    get: 'GET'
+}

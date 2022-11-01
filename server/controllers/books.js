@@ -13,7 +13,7 @@ export const getBooks = async (req, res) => {
 export const createBook = async (req, res) => {
     const book = req.body;
 
-    const newBook = new BookMessage(book);
+    const newBook = new BookMessage({...book, creator: req.userId, createdAt: new Date().toISOString()});
     try {
         await newBook.save();
         res.status(200).json(newBook);
